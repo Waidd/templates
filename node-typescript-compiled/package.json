@@ -1,0 +1,22 @@
+{
+  "name": "node-typescript-compiled",
+  "version": "0.0.0",
+  "description": "template for node with compiled typescript project",
+  "type": "module",
+  "engines": {
+    "node": ">=18.2.0"
+  },
+  "scripts": {
+    "start": "node dist/start.js",
+    "build": "rm -rf ./dist && npm run compile",
+    "watch": "npm run compile -- --watch",
+    "compile": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thomas Cholley",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.36",
+    "typescript": "^4.7.2"
+  }
+}
